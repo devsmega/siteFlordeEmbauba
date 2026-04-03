@@ -1,0 +1,7 @@
+{
+  "name": "Flor de Embaúba - Restauração Ambiental",
+  "description": "Soluções premium em restauração ecológica, agronegócio sustentável e consultoria ambiental liderada pela Dra. Lidiane Poyer Rocha.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
