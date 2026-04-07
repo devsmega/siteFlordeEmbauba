@@ -4,13 +4,13 @@ import { Shield, BarChart3, Recycle, TreePine } from 'lucide-react';
 
 export default function ESG() {
   return (
-    <Section id="esg" className="bg-brand-green-soft overflow-hidden relative">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10 pointer-events-none">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-brand-green rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-brand-pink rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
-      </div>
-
+    <Section 
+      id="esg" 
+      className="text-white"
+      bgColor="var(--color-brand-green)"
+      bgImage="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=1920"
+      overlayOpacity={0.7}
+    >
       <div className="grid lg:grid-cols-2 gap-16 items-center relative z-10">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -23,12 +23,12 @@ export default function ESG() {
             <span className="text-brand-pink font-bold uppercase tracking-widest text-xs">Governança e Valor</span>
           </div>
           
-          <h2 className="text-4xl md:text-6xl font-display font-bold text-brand-dark leading-tight mb-8">
+          <h2 className="text-4xl md:text-6xl font-display font-bold mb-8 leading-tight">
             ESG: Transformando <br />
-            <span className="text-brand-green italic">natureza em valor real.</span>
+            <span className="text-brand-pink-soft italic">natureza em valor real.</span>
           </h2>
           
-          <p className="text-lg text-brand-dark/70 mb-10 leading-relaxed">
+          <p className="text-lg text-white/80 mb-10 leading-relaxed">
             Implementamos governança corporativa socioambiental. Transformamos relatórios de recursos naturais em valor real para a sua empresa, assegurando a diminuição de resíduos e a valorização da biodiversidade humana e ambiental.
           </p>
 
@@ -45,11 +45,11 @@ export default function ESG() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className="bg-white p-6 rounded-2xl border border-brand-green/10 shadow-sm hover:shadow-md transition-all"
+                className="bg-white/10 backdrop-blur-md p-6 rounded-[32px] border border-white/20 hover:bg-white/20 transition-all"
               >
-                <item.icon className="text-brand-pink mb-4" size={28} />
-                <h4 className="font-bold text-brand-green mb-2">{item.title}</h4>
-                <p className="text-xs text-brand-dark/60 leading-relaxed">{item.text}</p>
+                <item.icon className="text-brand-pink-soft mb-4" size={28} />
+                <h4 className="font-bold text-white mb-2">{item.title}</h4>
+                <p className="text-xs text-white/60 leading-relaxed">{item.text}</p>
               </motion.div>
             ))}
           </div>
@@ -62,7 +62,7 @@ export default function ESG() {
           transition={{ duration: 1 }}
           className="relative"
         >
-          <div className="rounded-3xl overflow-hidden shadow-2xl aspect-square">
+          <div className="rounded-[40px] overflow-hidden shadow-2xl aspect-square border-8 border-white/10">
             <img 
               src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1000" 
               alt="Nature Landscape" 
@@ -72,7 +72,7 @@ export default function ESG() {
           </div>
           
           {/* Floating Badge */}
-          <div className="absolute -bottom-10 -right-10 bg-brand-pink p-8 rounded-full shadow-2xl text-white text-center w-40 h-40 flex flex-col items-center justify-center border-8 border-brand-green-soft">
+          <div className="absolute -bottom-10 -right-10 bg-brand-pink p-8 rounded-full shadow-2xl text-white text-center w-40 h-40 flex flex-col items-center justify-center border-8 border-brand-green/20">
             <div className="text-4xl font-bold font-display">ESG</div>
             <div className="text-[10px] uppercase font-bold tracking-widest mt-1">Liderança</div>
           </div>

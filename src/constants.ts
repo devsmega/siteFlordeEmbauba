@@ -122,5 +122,5 @@ export const CONTACT: ContactInfo = {
   address: "Rua Grapíá Nº 65, Sala 05 - Carandá Bosque, Campo Grande, MS",
   phones: ["+55 67 9 9971-9237", "+55 67 9 9809-9534"],
   email: "flordeembauba@hotmail.com",
-  instagram: "LIDIANEPOYER"
+  instagram: "agrocientista.ms"
 };

@@ -69,7 +69,7 @@ export default function Footer() {
 
             <div className="flex gap-4">
               <a 
-                href={`https://instagram.com/${CONTACT.instagram}`} 
+                href={`https://www.instagram.com/${CONTACT.instagram}`} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-12 h-12 bg-brand-pink rounded-full flex items-center justify-center hover:scale-110 transition-transform shadow-lg shadow-brand-pink/20"
@@ -132,7 +132,7 @@ export default function Footer() {
         <div className="pt-12 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex items-center gap-4">
             <img 
-              src="/flordeEmbaúba.jpeg" 
+              src="/flordeEmbauba2.jpeg" 
               alt="Flor de Embaúba Logo" 
               className="w-12 h-12 object-contain rounded-full bg-white p-1"
               referrerPolicy="no-referrer"

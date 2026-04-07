@@ -7,17 +7,11 @@ export default function About() {
   return (
     <Section 
       id="about" 
-      className="relative overflow-hidden"
+      className="text-brand-dark"
+      bgColor="var(--color-brand-pink-soft)"
+      bgImage="/flordeEmbauba.jpeg"
+      overlayOpacity={0.05}
     >
-      {/* Background Image with Overlay */}
-      <div 
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-        style={{ 
-          backgroundImage: 'url(/flordeEmbaúba.jpeg)',
-          opacity: 0.15
-        }}
-      />
-      
       <div className="grid lg:grid-cols-2 gap-16 items-center relative z-10">
         {/* Image Side */}
         <motion.div
@@ -27,7 +21,7 @@ export default function About() {
           transition={{ duration: 0.8 }}
           className="relative"
         >
-          <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl aspect-[3/4]">
+          <div className="relative z-10 rounded-[40px] overflow-hidden shadow-2xl aspect-[3/4] border-8 border-white">
             <img 
               src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=1000" 
               alt="Dra. Lidiane Poyer Rocha" 
@@ -41,8 +35,8 @@ export default function About() {
           </div>
           
           {/* Background Decorative */}
-          <div className="absolute -top-10 -left-10 w-40 h-40 border-4 border-brand-pink-soft rounded-3xl -z-10"></div>
-          <div className="absolute -bottom-10 -right-10 w-60 h-60 bg-brand-green/5 rounded-full -z-10 blur-3xl"></div>
+          <div className="absolute -top-10 -left-10 w-40 h-40 border-4 border-brand-pink rounded-[40px] -z-10 opacity-20"></div>
+          <div className="absolute -bottom-10 -right-10 w-60 h-60 bg-brand-green/10 rounded-full -z-10 blur-3xl"></div>
         </motion.div>
 
         {/* Content Side */}
@@ -62,17 +56,17 @@ export default function About() {
             <span className="text-brand-green italic">da preservação.</span>
           </h2>
           
-          <p className="text-lg text-brand-dark/70 mb-8 leading-relaxed">
-            A Flor de Embaúba (FERA) nasceu da união entre ciência rigorosa e conhecimento popular. 
-            Liderada pela Dra. Lidiane Poyer Rocha, bióloga especialista em botânica e ecologia vegetal, 
-            nossa missão é tornar propriedades rurais sustentáveis e economicamente prósperas.
+          <p className="text-lg text-brand-dark/70 mb-10 leading-relaxed">
+            A **Flor de Embaúba (FERA)** nasceu da união entre ciência rigorosa e conhecimento popular. 
+            Liderada pela **Dra. Lidiane Poyer Rocha**, bióloga especialista em botânica e ecologia vegetal, 
+            nossa missão é tornar propriedades rurais sustentáveis e economicamente prósperas através da restauração ecológica verdadeira.
           </p>
 
           <div className="grid sm:grid-cols-2 gap-8">
             {VALUES.map((value) => {
               const IconComponent = (Icons as any)[value.icon];
               return (
-                <div key={value.title} className="flex gap-4">
+                <div key={value.title} className="flex gap-4 p-4 bg-white/50 backdrop-blur-sm rounded-2xl border border-white/20">
                   <div className="flex-shrink-0 w-12 h-12 bg-brand-pink-soft rounded-xl flex items-center justify-center text-brand-pink">
                     {IconComponent && <IconComponent size={24} />}
                   </div>
